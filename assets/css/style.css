@@ -1,0 +1,300 @@
+/*le quitamos el margin y padding a todos los elementos*/
+* {
+    margin:0; /*distancia desde el borde del elemento hasta otros elementos*/
+    padding: 0; /*espacio de relleno desde el borde del elemento hasta el contenido*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edf8f4;
+    font-family:'Open Sans', Arial, Helvetica;
+   /* font-family: Arial, Helvetica, sans-serif;*/
+    color: #293A4A;
+   /* overflow: auto;*/
+}
+
+#banner {
+   height: 40vh; /*queremos tener de alto el 80 del alto del navegador*/
+    /*width: 50vw; ancho*/
+   /* max-width: 700px;*/
+    background-image: url("../../imagenes-hosting-cpanel/servidor-linux-usa.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #293A4A;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+  
+}
+
+.logo {
+    background-color: #293A4A;
+    padding: 10px 50px;
+}
+
+nav {
+   /* height: 10vh; /*queremos tener de alto el 20 del alto del navegador*/
+    background-color:#FF6600; 
+
+    display:flex;
+    justify-content: space-between; /*con respecto al eje principal que es la fila(horizontal)*/ 
+    align-items: center; /*con respecto al eje secundario que es la columna(vertical)*/
+    color: #FFF;!important;
+    padding: 10px 30px;
+}
+
+.nav-link {
+    display: flex;
+    color: #FFF;!important;
+    /*ubicamos los li*/
+    gap: 30px; /*defino el tamaño de los huecos entre los items*/
+font-weight: 500;
+    list-style: none;
+
+}
+
+.nav-link .nav-item li a {
+    text-decoration: none;
+    color: #FFF;!important;
+}
+.nav-link .nav-item li a:hover {
+        color: #ffcc00;!important;
+}
+/*seccion banner*/
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+h1 {
+  /*  font-size: xx-large;*/
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Montserrat', 'Open Sans', Arial, Helvetica;
+    letter-spacing: -3px;
+}
+h2 {
+    /*  font-size: xx-large;*/
+
+      font-family: 'Montserrat', 'Open Sans', Arial, Helvetica;
+      letter-spacing: -1px;
+  }
+
+.naranja{
+    color:#FF6600;
+}
+
+#planes-cpanel {
+   /*  background-image: url("../../imagenes-hosting-cpanel/servidores.png");
+    opacity: 20%;*/
+    background-size: cover;
+    background-position: center;
+  
+padding: 20px;
+padding-top: 50px;
+padding-left: 50px;
+color:#0b3b29;
+text-align: center;
+
+}
+.titulo {
+    font-size: 50px;
+    color:#0b3b29;!important
+}
+.texto1 {
+   /* width: 30%;*/
+
+   color:#0b3b29;!important
+}
+.flexibles {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+    align-items: top;
+}
+#contenedor-planes-cpanel{
+    padding: 30px;
+
+  }
+.plan-hosting-cpanel {
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid #86b7ce;
+   /*   border: 20px groove #FF6600;*/
+
+}
+.plan-hosting-cpanel h2 {
+    background-color: #006600;
+    text-align: center;
+    color:#FFF;
+    padding: 20px;
+
+   
+}
+.plan-hosting-cpanel h3 {
+    background-color: #8fcf8f;
+    text-align: center;
+    color:#FF6600;
+    padding: 5px;
+    
+   
+}
+
+.plan-hosting-cpanel ul {
+    background-color: #b5e4b5;
+    text-align: center;
+    color:#0b3b29;
+    padding: 20px;
+list-style: none;
+   
+}
+#hosting-wordpress {
+    background-size: cover;
+    background-position: center;
+  
+padding: 20px;
+padding-top: 50px;
+padding-left: 50px;
+text-align: center;
+
+
+}
+
+#hosting-multidominio {
+    background-size: cover;
+    background-position: center;
+  
+padding: 20px;
+padding-top: 50px;
+padding-left: 50px;
+
+    text-align: center;
+    padding: 20px;
+}
+#webmaster {
+    background-size: cover;
+    background-position: center;
+  
+padding: 20px;
+padding-top: 50px;
+padding-left: 50px;
+
+text-align: center;
+}
+#contacto {
+    /*background-color: #ffeedb;*/
+    background-size: cover;
+    background-position: center;
+  
+padding: 20px;
+padding-top: 50px;
+padding-left: 50px;
+
+text-align: center;
+}
+.precio {
+    background-color: #FFCC00;
+    color:#0b3b29;
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+}
+.boton {
+ /* outline: 2px solid #023d0f;*/
+   
+    background-color: #Ff6600;
+    color:#ffffff;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin:5px;
+    margin-top: 10px;
+  /*border: 10px outset #FF3300;*/
+    border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+
+}
+.boton a:hover {
+ /* outline: 2px solid #023d0f;*/
+             padding: 10px;
+       margin:5px;
+       color:#FFCC00;
+    border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   text-decoration: none;
+
+}
+.boton a {
+    /* outline: 2px solid #023d0f;*/
+                padding: 10px;
+          margin:5px;
+          color: #fff;
+       border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      text-decoration: none;
+   
+   }
+.imagen{
+      text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-group{
+    padding-top: 5px;
+    margin-top: 10px;
+  }
+  .btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:100px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+footer {
+    background-color:#343a40;
+    color:#ccc;
+      
+    padding: 60px 30px;
+}
+footer a {
+
+    color:#ccc;
+    font-size: small;
+    text-decoration: none;
+
+}
+
+ 
+footer ul {
+
+     list-style: none;
+ 
+ }
+ 
+
+ footer  a:hover {
+         color: #ffcc00;!important;
+ }
